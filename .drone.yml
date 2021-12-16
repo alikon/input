@@ -70,6 +70,7 @@ steps:
   commands:
   - php -v
   - composer update --prefer-stable --prefer-lowest
+  - composer update phpunit/phpunit-mock-objects
   volumes:
   - name: composer-cache
     path: /tmp/composer-cache
@@ -311,6 +312,6 @@ volumes:
 
 ---
 kind: signature
-hmac: d0c0ca2f20c42e7f351a223f78bd058ed4242e85a060e4740108a0395001c4ba
+hmac: 730ce856b169a2b84c42ac4a70a68eb5887c567aca16a7e20d070569f7f53a07
 
 ...
